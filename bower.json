@@ -1,0 +1,19 @@
+{
+    "name": "doctor-che",
+    "version": "0.1.0",
+    "authors": [
+        "desir2web <desir.web@gmail.com>"
+    ],
+    "license": "MIT",
+    "private": true,
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "jquery": "1.11.1"
+    }
+}
