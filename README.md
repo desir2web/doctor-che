@@ -1,22 +1,9 @@
-grunt-frontend-boilerplate
+Doctor Che web-site
 ==========================
 
-## Boilerplate for starting new projects
+## 
 
-Based on original [article](http://www.html5rocks.com/en/tutorials/tooling/supercharging-your-gruntfile/). [Here](http://habrahabr.ru/post/215267/) is russian translation.
-
-### Notes how to install everything I need
-
-1. ставим nodejs
-2. проверяем node -v и npm -v
-3. ставим грант sudo npm install -g grunt-cli
-3. ставим бовер sudo npm install -g bower
-4. идем в папку проекта cd /путь/путь\ с\ пробелом/
-5. устанавливаем зависимости для гранта npm install
-6. устанавливаем зависимости для бовера bower install
-7. ставим плагины bower install owl-carusel --save
-
-
+Layout & Styles based on less & mustache templates
 
 ### Included grunt plugins:
 
