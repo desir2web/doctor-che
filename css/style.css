@@ -252,14 +252,6 @@ h1, h2, h3, h4, h5, h6, strong {
                 #about .tab-group .tab-content .slider .slide .img {
                     height: 510px;
                 }
-                #about .tab-group .tab-text .text {
-                    padding: 30px 35px;
-                    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
-                    z-index: 2;
-                    position: absolute;
-                    bottom: -20px;
-                    background: #fff;
-                }
     #about .tab-group .tab-captions {
         position: absolute;
         width: 100%;
@@ -284,6 +276,14 @@ h1, h2, h3, h4, h5, h6, strong {
                 color: #976f41;
                 background: #fff;
                 border-bottom: 1px solid #fff;
+            }
+            #about .tab-group .tab-text .text {
+                padding: 30px 35px;
+                box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+                z-index: 2;
+                position: absolute;
+                bottom: -20px;
+                background: #fff;
             }
 
 
