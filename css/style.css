@@ -1,0 +1,328 @@
+/* Mikhail Nikipelov — http://desir.me/ */
+
+@import url(bootstrap.min.css);
+@import url(reset.css);
+@import url(animations.css);
+
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:300,700,400&subset=latin,cyrillic);
+
+/* basics */
+
+input,
+select,
+textarea,
+button {
+  vertical-align: top;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+textarea {
+  overflow: auto;
+}
+button::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner {
+  padding: 0 !important;
+  border: 0 none !important;
+}
+:-moz-placeholder {
+  opacity: 1;
+}
+::-moz-placeholder {
+  opacity: 1;
+}
+
+body {
+	font: 400 16px/24px 'Roboto Slab', serif;
+	color: #424242;
+    text-rendering: optimizeLegibility;
+    height: 3000px;
+}
+a:focus, img:focus, select:focus, input:focus, textarea:focus, checkbox:focus {
+    outline: inherit;
+}
+
+a {
+    color: #0062a6;
+    text-decoration: none;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+    a:hover {
+        color: #c00;
+        text-decoration: none;
+    }
+    a:active {
+        text-decoration: none;
+    }
+    a:focus {
+        text-decoration: none;
+    }
+
+p {
+    margin: 0 0 25px 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+input {
+    width: 100%;
+    border: 1px solid #b6b6b6;
+    padding: 6px 10px;
+    -webkit-transition: border-color 0.2s ease;
+    -moz-transition: border-color 0.2s ease;
+    -ms-transition: border-color 0.2s ease;
+    -o-transition: border-color 0.2s ease;
+    transition: border-color 0.2s ease;
+}
+    input:focus {
+        border: 1px solid #b6936b !important;
+    }
+
+
+
+/* buttons */
+
+.btn {
+    display: inline-block;
+    background: #95e42e;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 21px;
+}
+    .btn:hover {
+        background: #70c600;
+        color: #fff;
+        text-decoration: none;
+    }
+    .btn:active {
+        background: #4c8402;
+        text-decoration: none;
+    }
+    .btn:focus {
+        color: #fff;
+    }
+
+.minimize {
+    letter-spacing: -2px;
+}
+
+
+
+/* headers */
+
+h1, h2, h3, h4, h5, h6, strong {
+    font-weight: 700;
+}
+
+
+
+/* vertical middle */
+
+.table {
+    display: table;
+    width: 100%;
+}
+    .tablecell {
+        display: table-cell;
+        vertical-align: middle;
+        height: 600px;
+    }
+
+
+
+/* header */
+
+#welcome {
+    position: relative;
+    padding: 105px 0 0 0;
+    
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+    #welcome .nav {
+        background: #f2f2f2;
+        text-align: center;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 3;
+    }
+        #welcome .nav .menu {}
+            #welcome .nav .menu ul {}
+                #welcome .nav .menu ul li {
+                    display: inline-block;
+                }
+                    #welcome .nav .menu ul li a {
+                        display: block;
+                        padding: 20px 15px;
+                        color: #424242;
+                        font-size: 18px;
+                    }
+                        #welcome .nav .menu ul li a:hover {
+                            background: #424242;
+                            color: #f2f2f2;
+                        }
+
+    #welcome .search {
+        background: url(../img/icon-search.png) right top no-repeat;
+        background-size: 30px 100px;
+        padding-right: 35px;
+
+        -webkit-transition: background-position 0.2s ease;
+        -moz-transition: background-position 0.2s ease;
+        -ms-transition: background-position 0.2s ease;
+        -o-transition: background-position 0.2s ease;
+        transition: background-position 0.2s ease;
+    }
+        #welcome .search:focus {
+            background: url(../img/icon-search.png) right bottom no-repeat;
+            background-size: 30px 100px;
+        }
+    #welcome .logo {
+        background: url(../img/logo.png) center center no-repeat;
+        background-size: 128px 140px;
+        width: 100%;
+        height: 140px;
+        margin: -15px 0 0 0;
+    }
+    #welcome a[href*=tel] {
+        color: #424242;
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: -1px;
+        white-space: nowrap;
+        line-height: 36px;
+    }
+        #welcome a[href*=tel]:first-child:before {
+            display: block;
+            content: '';
+            background: url(../img/icon-tel.png) no-repeat;
+            background-size: 20px 25px;
+            width: 20px;
+            height: 25px;
+            position: absolute;
+            top: 7px;
+            left: -25px;
+        }
+    #welcome a[href*=reception] {
+        color: #638e2b;
+        font-size: 18px;
+        text-decoration: underline;
+        display: inline-block;
+        margin: 20px 0 0 0;
+    }
+
+/* content */
+
+.content {
+    position: relative;
+}
+
+/* about */
+
+#about {
+    margin: 65px 0 0 0;
+}
+    #about .tab-group {
+        position: relative;
+    }
+    #about .tab-group .tab-content {
+        border: 1px solid #b6936b;
+        padding: 20px;
+    }
+        #about .tab-group .tab-content .slider {}
+            #about .tab-group .tab-content .slider .slide {}
+                #about .tab-group .tab-content .slider .slide .img {
+                    height: 510px;
+                }
+                #about .tab-group .tab-text .text {
+                    padding: 30px 35px;
+                    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+                    z-index: 2;
+                    position: absolute;
+                    bottom: -20px;
+                    background: #fff;
+                }
+    #about .tab-group .tab-captions {
+        position: absolute;
+        width: 100%;
+        top: -35px;
+    }
+        #about .tab-group .tab-captions .tab-caption {
+            display: block;
+            background: #f5f5f5;
+            text-align: center;
+            border: 1px solid #c8c8c8;
+            border-top-width: 2px;
+            border-bottom-color: #b6936b;
+            color: #706f6f;
+            padding: 5px 0;
+            height: 36px;
+        }
+            #about .tab-group .tab-captions .tab-caption:hover {
+                border-color: #b6936b;
+            }
+            #about .tab-group .tab-captions .tab-caption.active {
+                border-color: #b6936b;
+                color: #976f41;
+                background: #fff;
+                border-bottom: 1px solid #fff;
+            }
+
+
+
+/* footer */
+
+.footer {
+    position: relative;
+}
+
+
+
+/* fixes */
+
+.gecko {
+}
+
+.opera {
+}
+
+.mobile {
+}
+
+
+
+/* media */
+
+@media only screen and (max-width: 1199px) {
+    
+
+
+}
+
+@media only screen and (max-width: 991px) {
+
+
+    
+}
+
+@media only screen and (max-width: 767px) {
+
+}
