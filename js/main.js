@@ -143,5 +143,14 @@ $(document).ready(function(){
         itemsTablet: [768,1],
         itemsMobile : [500,1]
     });
+    $(".fellows").owlCarousel({
+        navigation : true,
+        slideSpeed : 300,
+        paginationSpeed : 400,
+        navigationText : ["",""],
+        pagination : false,
+        // "singleItem:true" is a shortcut for:
+        items : 1
+    });
 
 });
