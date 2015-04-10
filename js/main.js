@@ -122,13 +122,25 @@ $(document).ready(function(){
         navigation : false,
         slideSpeed : 300,
         paginationSpeed : 400,
-        navigationText : ["",""],
         pagination : false,
         // "singleItem:true" is a shortcut for:
         items : 5, 
         itemsDesktop : [1440,4],
         itemsDesktopSmall : [1024,3],
         itemsTablet: [768,2],
+        itemsMobile : [500,1]
+    });
+    $(".doctors").owlCarousel({
+        navigation : true,
+        slideSpeed : 300,
+        paginationSpeed : 400,
+        navigationText : ["",""],
+        pagination : false,
+        // "singleItem:true" is a shortcut for:
+        items : 3, 
+        itemsDesktop : [1440,3],
+        itemsDesktopSmall : [1024,3],
+        itemsTablet: [768,1],
         itemsMobile : [500,1]
     });
 

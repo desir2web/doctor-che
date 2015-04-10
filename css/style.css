@@ -411,6 +411,34 @@ h2 {
     text-align: center;
 }
 
+    #our-doctors h2 {
+        color: #706f6f;
+    }
+
+    #our-doctors .doctors {}
+        #our-doctors .doctors .doctor {
+            margin: 0 65px;
+        }
+            #our-doctors .doctors .doctor .photo {
+                width: 180px;
+                border-radius: 50%;
+                overflow: hidden;
+                margin: 0 auto 30px auto;
+            }
+            #our-doctors .doctors .doctor .name {
+                font-size: 24px;
+                font-weight: 700;
+            }
+            #our-doctors .doctors .doctor .position {
+                font-size: 14px;
+                color: #706f6f;
+                margin: 0 0 10px 0;
+            }
+            #our-doctors .doctors .doctor .description {
+                
+            }
+
+
 
 /* footer */
 

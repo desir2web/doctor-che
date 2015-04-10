@@ -30,8 +30,8 @@
     content: "";
     width: 40px;
     height: 40px;
-    border-top: 3px #ddd solid;
-    border-left: 3px #ddd solid;
+    border-top: 3px #000 solid;
+    border-left: 3px #000 solid;
     position: relative;
     top: 8px;
     -webkit-transition: all 0.2s ease;
@@ -50,6 +50,10 @@
     height: 0;
 }
 
+.owl-theme .owl-controls .owl-buttons .owl-prev {
+    position: absolute;
+    left: 0;
+}
 .owl-theme .owl-controls .owl-buttons .owl-prev:before {
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
@@ -79,8 +83,8 @@
 	text-decoration: none;
 }
     .owl-theme .owl-controls.clickable .owl-buttons div:hover:before{
-        border-top: 3px #fff solid;
-        border-left: 3px #fff solid;
+        border-top: 5px #000 solid;
+        border-left: 5px #000 solid;
     }
 
 /* Styling Pagination*/
