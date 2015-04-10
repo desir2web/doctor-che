@@ -270,7 +270,7 @@ h2 {
             top: 7px;
             left: -25px;
         }
-    #welcome a[href*=reception] {
+    #welcome a[href*=record] {
         color: #638e2b;
         font-size: 18px;
         text-decoration: underline;
@@ -372,7 +372,11 @@ h2 {
             color: #424242;
             margin: 0 10px;
             padding: 0 0 5px 0;
-        }
+            }
+            #testimonials .cards .testimonial.form {
+                padding: 0;
+                box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+            }
             #testimonials .cards .testimonial .text {
                 padding: 25px 30px;
                 background: #fff;
@@ -487,6 +491,21 @@ h2 {
     }
     #record input, #record select {
         margin: 0 0 20px 0;
+    }
+
+
+
+/* every-one-should-know */
+
+#every-one-should-know {
+    border-top: 10px solid #b6936b;
+    border-bottom: 10px solid #b6936b;
+    text-align: center;
+    background: url('../img/flower.jpg') 0 60px no-repeat;
+    background-size: 420px 432px;
+}
+    #every-one-should-know h2 {
+        color: #b6936b;
     }
 
 
