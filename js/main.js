@@ -1,5 +1,7 @@
 $(document).ready(function(){
     
+    //tabs
+    
     $('.tab-caption').on('click',function(e){
         e.preventDefault();
         var who = $(this).attr('href').split('#')[1],
@@ -80,7 +82,7 @@ $(document).ready(function(){
         } else {
             var activeScreen = window.location.hash;
         }
-        var navHeight = 70, //$('.nav').height(),
+        var navHeight = $('.nav').height(),
             blockPosition = $( activeScreen ).offset().top,
             topPos = blockPosition - navHeight;
         scrolling(topPos);
@@ -89,7 +91,7 @@ $(document).ready(function(){
     $('.go-to').on('click',  function(e){
         e.preventDefault();
         var goScreen = $(this).attr('href'),
-            navHeight = 70, //$('.nav').height(),
+            navHeight = $('.nav').height(),
             blockPosition = $( goScreen ).offset().top,
             topPos = blockPosition - navHeight;
         scrolling(topPos);
