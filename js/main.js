@@ -75,18 +75,18 @@ $(document).ready(function(){
         $('html, body').stop().animate({scrollTop: position}, speed );
     }
     
-    $(window).on('load', function(e){
-        e.preventDefault();
-        if (window.location.hash == '') {
-            var activeScreen = 'body';
-        } else {
-            var activeScreen = window.location.hash;
-        }
-        var navHeight = $('.nav').height(),
-            blockPosition = $( activeScreen ).offset().top,
-            topPos = blockPosition - navHeight;
-        scrolling(topPos);
-    });
+//    $(window).on('load', function(e){
+//        e.preventDefault();
+//        if (window.location.hash == '') {
+//            var activeScreen = 'body';
+//        } else {
+//            var activeScreen = window.location.hash;
+//        }
+//        var navHeight = $('.nav').height(),
+//            blockPosition = $( activeScreen ).offset().top,
+//            topPos = blockPosition - navHeight;
+//        scrolling(topPos);
+//    });
     
     $('.go-to').on('click',  function(e){
         e.preventDefault();
@@ -95,6 +95,41 @@ $(document).ready(function(){
             blockPosition = $( goScreen ).offset().top,
             topPos = blockPosition - navHeight;
         scrolling(topPos);
+    });
+    
+    //set sliders
+    
+    $(".tab-content").owlCarousel({
+        navigation : false,
+        slideSpeed : 300,
+        paginationSpeed : 400,
+        singleItem : true,
+        pagination : false,
+        mouseDrag : false,
+        touchDrag : false
+    });
+    $(".slider").owlCarousel({
+        navigation : true,
+        slideSpeed : 300,
+        paginationSpeed : 400,
+        singleItem : true,
+        navigationText : ["",""],
+        pagination : false,
+        autoPlay : 4500,
+        stopOnHover : true
+    });
+    $(".cards").owlCarousel({
+        navigation : false,
+        slideSpeed : 300,
+        paginationSpeed : 400,
+        navigationText : ["",""],
+        pagination : false,
+        // "singleItem:true" is a shortcut for:
+        items : 5, 
+        itemsDesktop : [1440,4],
+        itemsDesktopSmall : [1024,3],
+        itemsTablet: [768,2],
+        itemsMobile : [500,1]
     });
 
 });

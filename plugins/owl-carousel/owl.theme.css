@@ -127,3 +127,8 @@
 	min-height: 150px;
 	background: url(AjaxLoader.gif) no-repeat center center
 }
+
+/* mouse grab icon */
+.grabbing { 
+    cursor:url(grabbing.png) 0 0, move;
+}
