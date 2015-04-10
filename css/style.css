@@ -74,7 +74,7 @@ img {
     height: auto;
 }
 
-input, textarea {
+input, textarea, select {
     width: 100%;
     border: 1px solid #b6b6b6;
     padding: 6px 10px;
@@ -84,7 +84,7 @@ input, textarea {
     -o-transition: border-color 0.2s ease;
     transition: border-color 0.2s ease;
 }
-    input:focus, textarea:focus {
+    input:focus, textarea:focus, select:focus {
         border: 1px solid #b6936b !important;
     }
 
@@ -474,6 +474,20 @@ h2 {
                 max-width: 800px;
                 margin: 0 auto;
             }
+
+
+
+/* record */
+
+#record {
+    text-align: center;
+}
+    #record h2 {
+        color: #638e2b;
+    }
+    #record input, #record select {
+        margin: 0 0 20px 0;
+    }
 
 
 
