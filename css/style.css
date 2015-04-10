@@ -433,9 +433,46 @@ h2 {
                 font-size: 14px;
                 color: #706f6f;
                 margin: 0 0 10px 0;
+                line-height: 17px;
             }
-            #our-doctors .doctors .doctor .description {
-                
+            #our-doctors .doctors .doctor .description {}
+
+
+
+/* fellows */
+
+#fellows {
+    background: url('../img/bg-fellows.jpg');
+    text-align: center;
+}
+    #fellows h2 {
+        color: #706f6f;
+    }
+
+    #fellows .fellows {}
+        #fellows .fellows .fellow {
+            margin: 0 65px;
+        }
+            #fellows .fellows .fellow .photo {
+                width: 180px;
+                border-radius: 50%;
+                overflow: hidden;
+                margin: 0 auto 30px auto;
+            }
+            #fellows .fellows .fellow .name {
+                font-size: 18px;
+                font-weight: 700;
+            }
+            #fellows .fellows .fellow .position {
+                font-size: 14px;
+                color: #706f6f;
+                margin: 0 auto 10px auto;
+                max-width: 450px;
+                line-height: 17px;
+            }
+            #fellows .fellows .fellow .description {
+                max-width: 800px;
+                margin: 0 auto;
             }
 
 
