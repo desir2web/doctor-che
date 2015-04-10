@@ -40,7 +40,6 @@ body {
 	font: 400 16px/24px 'Roboto Slab', serif;
 	color: #424242;
     text-rendering: optimizeLegibility;
-    height: 3000px;
 }
 a:focus, img:focus, select:focus, input:focus, textarea:focus, checkbox:focus {
     outline: inherit;
