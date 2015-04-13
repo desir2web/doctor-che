@@ -291,6 +291,9 @@ h2 {
         display: inline-block;
         margin: 20px 0 0 0;
     }
+        #welcome a[href*=record]:hover {
+            color: #3a5812;
+        }
 
 /* content */
 
