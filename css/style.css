@@ -751,7 +751,9 @@ h2 {
         color: #fff;
         white-space: nowrap;
     }
-    #contacts form {}
+    #contacts form {
+        color: #000;
+    }
         #contacts form textarea, #contacts form input {
             border: 1px solid transparent;
         }
