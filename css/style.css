@@ -40,6 +40,7 @@ body {
 	font: 400 16px/24px 'Roboto Slab', serif;
 	color: #424242;
     text-rendering: optimizeLegibility;
+    -webkit-transform: translate3d(0, 0, 0);
 }
 a:focus, img:focus, select:focus, input:focus, textarea:focus, checkbox:focus {
     outline: inherit;
@@ -72,6 +73,18 @@ p+p {
 img {
     width: 100%;
     height: auto;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+    
+    select {
+        -webkit-appearance: none;
+        border-radius: 0;
+        display: inline-block;
+        position: relative;
+        background: url('../img/webkit-drop-arrow.png') right center no-repeat;
+    }
+    
 }
 
 input, textarea, select {
@@ -215,6 +228,7 @@ h2 {
             #welcome .nav .menu ul {}
                 #welcome .nav .menu ul li {
                     display: inline-block;
+                    margin-right: -4px;
                 }
                     #welcome .nav .menu ul li a {
                         display: block;
@@ -439,7 +453,9 @@ h2 {
                 margin: 0 0 10px 0;
                 line-height: 17px;
             }
-            #our-doctors .doctors .doctor .description {}
+            #our-doctors .doctors .doctor .description {
+                font-size: 18px;
+            }
 
 
 
@@ -507,6 +523,60 @@ h2 {
     #every-one-should-know h2 {
         color: #b6936b;
     }
+
+    #every-one-should-know .tab-group {}
+
+        #every-one-should-know .tab-group .tab-captions {
+            margin: 0 0 50px 0;
+        }
+            #every-one-should-know .tab-group .tab-captions .tab-caption {
+                font-size: 18px;
+                color: #000;
+                font-weight: 400;
+                border-bottom: 1px dashed;
+                margin: 0 15px;
+            }
+                #every-one-should-know .tab-group .tab-captions .tab-caption:hover {}
+                #every-one-should-know .tab-group .tab-captions .tab-caption.active {
+                    font-weight: 700;
+                    border-bottom: 0;
+                }
+
+        #every-one-should-know .tab-group .tab-content {}
+            #every-one-should-know .tab-group .tab-content #articles {}
+                #every-one-should-know .tab-group .tab-content #articles .article {
+                    background: #f2f2f2;
+                    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+                    text-align: left;
+                    padding: 20px;
+                    width: 22.5%;
+                    margin: 0 1% 20px 1%;
+                }
+                    #every-one-should-know .tab-group .tab-content #articles .article h3 {
+                        font-size: 18px;
+                        margin: 0 0 10px 0;
+                    }
+                    #every-one-should-know .tab-group .tab-content #articles .article p {
+                        font-size: 14px;
+                    }
+                    #every-one-should-know .tab-group .tab-content #articles .article p+p {
+                        margin: 10px 0 0 0;
+                    }
+                    #every-one-should-know .tab-group .tab-content #articles .article a {
+                        font-size: 14px;
+                        color: #a96c26;
+                        text-decoration: underline;
+                        margin: 10px 0 0 0;
+                        display: inline-block;
+                    }
+                        #every-one-should-know .tab-group .tab-content #articles .article a:after {
+                            display: inline-block;
+                            content: '→';
+                            margin: 0 0 0 3px;
+                        }
+                        #every-one-should-know .tab-group .tab-content #articles .article a:hover {
+                            color: #d97605;
+                        }
 
 
 
