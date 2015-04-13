@@ -172,8 +172,7 @@ $(document).ready(function(){
         singleItem : true,
         pagination : false,
         mouseDrag : false,
-        touchDrag : false,
-        autoHeight : true
+        touchDrag : false
     });
     
     //masonry grid
@@ -182,6 +181,14 @@ $(document).ready(function(){
         'itemSelector' : '.article'
         //"gutter" : ".gutter-size",
         //columnWidth: 200
+    });
+    
+    //faq accordion
+    
+    $( ".accordion" ).accordion({
+        heightStyle: "content",
+        collapsible: true,
+        active: false
     });
 
 });

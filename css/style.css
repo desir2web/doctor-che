@@ -40,7 +40,6 @@ body {
 	font: 400 16px/24px 'Roboto Slab', serif;
 	color: #424242;
     text-rendering: optimizeLegibility;
-    -webkit-transform: translate3d(0, 0, 0);
 }
 a:focus, img:focus, select:focus, input:focus, textarea:focus, checkbox:focus {
     outline: inherit;
@@ -296,7 +295,7 @@ h2 {
 
 .content {
     position: relative;
-    padding: 55px 0;
+    padding: 55px 0;-webkit-transform: translate3d(0, 0, 0);
 }
 
 /* about */
@@ -577,6 +576,32 @@ h2 {
                         #every-one-should-know .tab-group .tab-content #articles .article a:hover {
                             color: #d97605;
                         }
+
+
+
+/* faq */
+
+#faq {
+    text-align: center;
+}
+    #faq .accordion {
+        text-align: left;
+    }
+    #faq .accordion h3 {
+        font-size: 21px;
+        font-weight: 700;
+        cursor: pointer;
+        display: inline;
+        border-bottom: 1px dashed;
+    }
+        #faq .accordion h3:after {
+            content: "";
+            display: block;
+            margin: 15px 0 0 0;
+        }
+        #faq .accordion h3+div {
+            padding: 0 0 35px 0;
+        }
 
 
 
