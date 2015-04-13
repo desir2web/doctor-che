@@ -647,6 +647,10 @@ h2 {
             #contacts .icon.skype:before {
                 background-position: -90px 0;
             }
+    #contacts a[href*=tel] {
+        color: #fff;
+        white-space: nowrap;
+    }
     #contacts form {}
         #contacts form textarea, #contacts form input {
             border: 1px solid transparent;
