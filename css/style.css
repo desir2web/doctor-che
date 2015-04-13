@@ -136,15 +136,16 @@ input, textarea, select {
         background: #432e1b;
     }
 
-.btn.testimonial-add {
+.btn.testimonial-all {
     background: transparent;
     border: 2px solid #fff;
+    margin: 30px 0 0 0;
 }
-    .btn.testimonial-add:hover {
+    .btn.testimonial-all:hover {
         background: #fff;
         color: #654529;
     }
-    .btn.testimonial-add:active {
+    .btn.testimonial-all:active {
         background: #fff;
         color: #654529;
     }
@@ -295,7 +296,10 @@ h2 {
 
 .content {
     position: relative;
-    padding: 55px 0;-webkit-transform: translate3d(0, 0, 0);
+    padding: 55px 0;
+}
+.content, .footer {
+    -webkit-transform: translate3d(0, 0, 0);
 }
 
 /* about */
@@ -605,11 +609,72 @@ h2 {
 
 
 
+/* contacts */
+
+#contacts {
+    background: #444 url('../img/bg-contacts.jpg');
+    color: #fff;
+    text-align: center;
+    padding-bottom: 0;
+}
+    #contacts .container {
+        text-align: left;
+    }
+    #contacts .icon {
+        font-size: 18px;
+        padding: 0 0 0 50px;
+        margin: 0 0 20px 0;
+    }
+        #contacts .icon:before {
+            display: block;
+            content: '';
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            left: 20px;
+            background: url('../img/icons.png') no-repeat;
+            background-size: 120px 30px;
+        }
+            #contacts .icon.tel:before {
+                background-position: -30px 0;
+            }
+            #contacts .icon.email:before {
+                background-position: -60px -2px;
+            }
+            #contacts .icon.skype:before {
+                background-position: -90px 0;
+            }
+    #contacts form {}
+        #contacts form textarea, #contacts form input {
+            border: 1px solid transparent;
+        }
+        #contacts form textarea {
+            height: 140px;
+            resize: none;
+        }
+        #contacts form input {
+            margin: 0 0 12px -8px;
+        }
+        #contacts form .btn {
+            margin: 0 0 0 -8px;
+        }
+    #contacts .map {
+        margin: 40px 0 0 0;
+    }
+
+
+
 /* footer */
 
 .footer {
     position: relative;
+    background: #444 url('../img/bg-contacts.jpg');
+    color: #fff;
 }
+    .footer .wrapper {
+        background: rgba(0, 0, 0, 0.35);
+        padding: 20px 0;
+    }
 
 
 
