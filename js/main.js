@@ -2,27 +2,14 @@ $(document).ready(function(){
     
     //tabs
     
-    $('#about .tab-caption').on('click',function(e){
+    $('.tab-caption').on('click',function(e){
         e.preventDefault();
         var who = $(this).attr('href').split('#')[1],
-            slider = $("#about .tab-content").data('owlCarousel');
+            slider = $(".tab-content").data('owlCarousel');
         slider.goTo(who);
         
         for (var i = 0; i <= 2; i ++) {
-            $('#about .tab-caption').removeClass('active');
-        }
-        
-        $(this).addClass('active');
-    });
-    
-    $('#every-one-should-know .tab-caption').on('click',function(e){
-        e.preventDefault();
-        var who = $(this).attr('href').split('#')[1],
-            slider = $("#every-one-should-know .tab-content").data('owlCarousel');
-        slider.goTo(who);
-        
-        for (var i = 0; i <= 2; i ++) {
-            $('#every-one-should-know .tab-caption').removeClass('active');
+            $('.tab-caption').removeClass('active');
         }
         
         $(this).addClass('active');
@@ -112,7 +99,7 @@ $(document).ready(function(){
     
     //set sliders
     
-    $("#about .tab-content").owlCarousel({
+    $(".tab-content").owlCarousel({
         navigation : false,
         slideSpeed : 300,
         paginationSpeed : 400,
@@ -164,24 +151,6 @@ $(document).ready(function(){
         pagination : false,
         // "singleItem:true" is a shortcut for:
         items : 1
-    });
-    $("#every-one-should-know .tab-content").owlCarousel({
-        navigation : false,
-        slideSpeed : 300,
-        paginationSpeed : 400,
-        singleItem : true,
-        pagination : false,
-        mouseDrag : false,
-        touchDrag : false,
-        autoHeight : true
-    });
-    
-    //masonry grid
-    
-    $('#articles').masonry({
-        'itemSelector' : '.article'
-        //"gutter" : ".gutter-size",
-        //columnWidth: 200
     });
 
 });
