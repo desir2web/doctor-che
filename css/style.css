@@ -519,9 +519,19 @@ h2 {
         z-index: 1;
         width: 200px;
         margin: 0 0 7px -15px;
+        opacity: 0;
         bottom: 100%;
         box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+        -webkit-transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+        -ms-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+        transition: all 0.2s ease;
     }
+        #record .date-and-time.show {
+            margin: 0 0 14px -15px;
+            opacity: 1;
+        }
         #record .date-and-time .date, #record .date-and-time .time {
             position: relative;
             padding: 20px 0;
@@ -547,7 +557,7 @@ h2 {
                     bottom: -14px;
                     margin: 0 0 0 -7px;
                 }
-                #record .date-and-time .time.accupaed .is-accupaed {
+                #record .date-and-time .time .is-accupaed {
                     opacity: 0;
                     position: absolute;
                     bottom: 0;
@@ -555,6 +565,11 @@ h2 {
                     background: rgba(194, 15, 15, 0.5);
                     font-size: 12px;
                     padding: 6px 0;
+                    -webkit-transition: all 0.2s ease;
+                    -moz-transition: all 0.2s ease;
+                    -ms-transition: all 0.2s ease;
+                    -o-transition: all 0.2s ease;
+                    transition: all 0.2s ease;
                 }
             #record .date-and-time .time.accupaed {
                 background: #c20f0f;
@@ -591,10 +606,10 @@ h2 {
                     #record .date-and-time .controls .increase:hover, #record .date-and-time .controls .decrease:hover {
                         background: rgba(0, 0, 0, 0.7);
                     }
-                #record .date-and-time .time.accupaed .controls .increase, #record .date-and-time .time.accupaed .controls .decrease {
+                #record .date-and-time .time .controls .increase, #record .date-and-time .time .controls .decrease {
                     background: rgba(255, 255, 255, 0.2);
                 }
-                    #record .date-and-time .time.accupaed .controls .increase:hover, #record .date-and-time .time.accupaed .controls .decrease:hover {
+                    #record .date-and-time .time .controls .increase:hover, #record .date-and-time .time .controls .decrease:hover {
                         background: rgba(255, 255, 255, 0.7);
                     }
                 #record .date-and-time .controls .increase {

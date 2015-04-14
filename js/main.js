@@ -110,6 +110,20 @@ $(document).ready(function(){
         scrolling(topPos);
     });
     
+    //date-and-time picker 
+    
+    $('[name=date-and-time]').on('click', function(e){
+        e.preventDefault();
+        $('.date-and-time').toggleClass('show');
+    });
+    
+    //date-and-time counter
+    
+      $('.increase, .decrease').on('click', function(e){
+        e.preventDefault();
+        $('.time').toggleClass('accupaed');
+    });
+    
     //set sliders
     
     $("#about .tab-content").owlCarousel({
