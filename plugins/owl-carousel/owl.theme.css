@@ -16,8 +16,8 @@
 	*display: inline;/*IE7 life-saver */
     width: 35px;
     height: 60px;
-	filter: Alpha(Opacity=50);/*IE7 fix*/
-	opacity: .5;
+	filter: Alpha(Opacity=99);/*IE7 fix*/
+	opacity: .99;
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
     -ms-transition: all 0.2s ease;
@@ -83,8 +83,8 @@
 	text-decoration: none;
 }
     .owl-theme .owl-controls.clickable .owl-buttons div:hover:before{
-        border-top: 5px #000 solid;
-        border-left: 5px #000 solid;
+        border-top: 7px #000 solid;
+        border-left: 7px #000 solid;
     }
 
 /* Styling Pagination*/

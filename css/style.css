@@ -232,17 +232,15 @@ h2 {
         }
         #welcome .nav .menu-toggle {
             display: block;
-            background: #b6936b;
             width: 50px;
             height: 0;
-            color: #fff;
             margin: 0 auto;
             overflow: hidden;
         }
             #welcome .nav .menu-toggle .icon.menu {
                 width: 20px;
                 height: 3px;
-                background: #fff;
+                background: #b6936b;
                 display: block;
                 margin: 0 auto;
                 position: relative;
@@ -252,7 +250,7 @@ h2 {
                     content: '';
                     width: 20px;
                     height: 3px;
-                    background: #fff;
+                    background: #b6936b;
                     display: block;
                     margin: 0 auto;
                     position: relative;
@@ -262,7 +260,7 @@ h2 {
                     content: '';
                     width: 20px;
                     height: 3px;
-                    background: #fff;
+                    background: #b6936b;
                     display: block;
                     margin: 0 auto;
                     position: relative;
@@ -418,6 +416,19 @@ h2 {
                     border-bottom: 1px solid #fff;
                 }
 
+    #about .owl-theme .owl-controls .owl-buttons {
+        position: absolute;
+        top: inherit;
+        bottom: 160px;
+        left: 100px;
+        right: 80px;
+        margin: 0;
+        height: 0;
+    }
+    #about .owl-theme .owl-controls .owl-buttons div::before {
+        border-color: #fff;
+    }
+
 
 
 /* testimonials */
@@ -507,6 +518,19 @@ h2 {
                 font-size: 18px;
             }
 
+    #our-doctors .owl-theme .owl-controls .owl-buttons {
+        position: absolute;
+        top: 70px;
+        left: 50%;
+        right: initial;
+        margin: 0 0 0 -150px;
+        width: 300px;
+        height: 0;
+    }
+        #our-doctors .owl-theme .owl-controls .owl-buttons div:before {
+            border-color: #d7d7d7;
+        }
+
 
 
 /* fellows */
@@ -544,6 +568,19 @@ h2 {
                 max-width: 800px;
                 margin: 0 auto;
             }
+
+    #fellows .owl-theme .owl-controls .owl-buttons {
+        position: absolute;
+        top: 70px;
+        left: 50%;
+        right: initial;
+        margin: 0 0 0 -150px;
+        width: 300px;
+        height: 0;
+    }
+        #fellows .owl-theme .owl-controls .owl-buttons div:before {
+            border-color: #a4a4a4;
+        }
 
 
 
@@ -866,27 +903,94 @@ h2 {
 }
 
 @media only screen and (max-width: 1115px) {
+
     #welcome .nav .menu ul li a {
         font-size: 16px;
     }
+
 }
 
 @media only screen and (max-width: 991px) {
-    
+
     #welcome .nav {
         height: 50px;
-        background: transparent;
     }
     #welcome .nav.open {
         height: inherit;
-        background: #f2f2f2;
     }
         #welcome .nav .menu-toggle {
             height: 50px;
         }
 
+    #about .tab-group, #about .tab-group .tab-content .slider .slide {
+        height: inherit;
+    }
+        #about .tab-group .tab-content .slider .slide .img {
+            height: 450px;
+        }
+        #about .tab-group .tab-content .slider .slide .text {
+            position: absolute;
+            bottom: 0;
+            box-shadow: none;
+            padding: 20px 10px 5px 10px;
+        }
+            #about .tab-group .tab-content .slider .slide .text::before {
+                display: none;
+            }
+    
+    #about .owl-theme .owl-controls .owl-buttons {
+        position: absolute;
+        top: 20px;
+        bottom: inherit;
+        left: 20px;
+        right: 20px;
+        margin: 0;
+        height: 0;
+    }
+
+    #every-one-should-know .tab-group .tab-content #articles .article {
+        width: 30.33333333333333333333%;
+        margin: 0 1.5% 20px 1.5%;
+    }
+
 }
 
 @media only screen and (max-width: 767px) {
+
+    h2:before {
+        display: none;
+    }
+    h2:after {
+        display: none;
+    }
+
+    #welcome {
+        padding: 80px 0 0 0;
+        text-align: center;
+    }
+        #welcome .logo {
+            margin: 30px 0;
+        }
+    
+    #about .tab-group .tab-content .slider .slide .text {
+        position: relative;
+    }
+
+    #every-one-should-know .tab-group .tab-captions {
+        margin: 0 0 30px 0;
+    }
+        #every-one-should-know .tab-group .tab-captions .tab-caption {
+            font-size: 16px;
+            margin: 0 10px;
+        }
+
+    #every-one-should-know .tab-group .tab-content #articles .article {
+        width: 98%;
+        margin: 0 1% 20px 1%;
+    }
+
+    #contacts form input, #contacts form .btn {
+        margin: 12px 0 0 0;
+    }
 
 }

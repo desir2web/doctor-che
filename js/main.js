@@ -157,6 +157,7 @@ $(document).ready(function(){
         paginationSpeed : 400,
         navigationText : ["",""],
         pagination : false,
+        autoHeight : true,
         // "singleItem:true" is a shortcut for:
         items : 3, 
         itemsDesktop : [1440,3],
@@ -170,6 +171,7 @@ $(document).ready(function(){
         paginationSpeed : 400,
         navigationText : ["",""],
         pagination : false,
+        autoHeight : true,
         singleItem : true
     });
     $("#every-one-should-know .tab-content").owlCarousel({
