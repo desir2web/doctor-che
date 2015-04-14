@@ -55,15 +55,9 @@ $(document).ready(function(){
     
     //menu on mobile
     
-    $(".menu-toggle").on('click', function(e){
+    $(".menu-toggle, .menu a").on('click', function(e){
         e.preventDefault();
-        $('.nav').addClass('open');
-    });
-    $('.nav a').on('click',function(e){
-        e.preventDefault();
-        if ($('.nav').hasClass('open')) {
-            $('.nav').removeClass('open');
-        }
+        $('.nav').toggleClass('open');
     });
     
     //trigger click on maps
@@ -104,7 +98,7 @@ $(document).ready(function(){
     $('.go-to').on('click',  function(e){
         e.preventDefault();
         var goScreen = $(this).attr('href'),
-            navHeight = $('.nav').height(),
+            navHeight = 64, //$('.nav').height(),
             blockPosition = $( goScreen ).offset().top,
             topPos = blockPosition - navHeight;
         scrolling(topPos);
@@ -176,8 +170,7 @@ $(document).ready(function(){
         paginationSpeed : 400,
         navigationText : ["",""],
         pagination : false,
-        // "singleItem:true" is a shortcut for:
-        items : 1
+        singleItem : true
     });
     $("#every-one-should-know .tab-content").owlCarousel({
         navigation : false,

@@ -223,7 +223,51 @@ h2 {
         top: 0;
         width: 100%;
         z-index: 3;
+        overflow: hidden;
+        height: 64px;
     }
+        #welcome .nav.open {
+            height: inherit;
+            overflow: inherit;
+        }
+        #welcome .nav .menu-toggle {
+            display: block;
+            background: #b6936b;
+            width: 50px;
+            height: 0;
+            color: #fff;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+            #welcome .nav .menu-toggle .icon.menu {
+                width: 20px;
+                height: 3px;
+                background: #fff;
+                display: block;
+                margin: 0 auto;
+                position: relative;
+                top: 23px;
+            }
+                #welcome .menu-toggle .icon.menu:before {
+                    content: '';
+                    width: 20px;
+                    height: 3px;
+                    background: #fff;
+                    display: block;
+                    margin: 0 auto;
+                    position: relative;
+                    top: -6px;
+                }
+                #welcome .menu-toggle .icon.menu:after {
+                    content: '';
+                    width: 20px;
+                    height: 3px;
+                    background: #fff;
+                    display: block;
+                    margin: 0 auto;
+                    position: relative;
+                    top: 3px;
+                }
         #welcome .nav .menu {}
             #welcome .nav .menu ul {}
                 #welcome .nav .menu ul li {
@@ -818,15 +862,29 @@ h2 {
 /* media */
 
 @media only screen and (max-width: 1199px) {
-    
-
 
 }
 
+@media only screen and (max-width: 1115px) {
+    #welcome .nav .menu ul li a {
+        font-size: 16px;
+    }
+}
+
 @media only screen and (max-width: 991px) {
-
-
     
+    #welcome .nav {
+        height: 50px;
+        background: transparent;
+    }
+    #welcome .nav.open {
+        height: inherit;
+        background: #f2f2f2;
+    }
+        #welcome .nav .menu-toggle {
+            height: 50px;
+        }
+
 }
 
 @media only screen and (max-width: 767px) {
